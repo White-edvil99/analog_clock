@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right bottom, rgb(225, 192, 247) 10%, rgb(210, 213, 243) 100%) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+#clockcontainer{
+    /* background-color: red; */
+    /* border: 2px solid red; */
+    height: 50vw;
+    width: 50vw;
+    margin: auto;
+    background-image: url(roman-numerals-png-42134.png);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+}
+ #hours, #minute, #second{
+    position: absolute;
+    background-color: green;
+    border-radius: 10px;
+    transform-origin: bottom;
+ }
+ #hours{
+    background-color: red;
+    width: 1%;
+    height: 30%;
+    top: 20.1%;
+    left: 49.62%;
+  /* display: none; */
+ }
+
+ #minute{
+    background-color: black;
+    width: 0.7%;
+    height: 38%;
+    top: 12.1%;
+    left: 49.72%;
+    
+    /* display: none; */
+}
+#second{
+     /* display: none; */
+    background-color: rgb(65, 182, 245);
+    width: 0.5%;
+    height: 40%;
+    top: 10.1%;
+    left: 49.88%;
+
+
+ }

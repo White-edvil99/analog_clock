@@ -1,0 +1,1 @@
+This is a web project based on an Analog clock which show time according to GTM +5:30 (India time)

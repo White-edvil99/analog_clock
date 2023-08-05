@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 100px;
+}
+.clock{
+    height: 50vw;
+    width: 50vw;
+    background-color: aquamarine;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock::after{
+    content: "";
+    width: 3%;
+    height: 3%;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+}
+ul li{
+    list-style: none;
+    font-size: 100%;
+    position: absolute;
+    text-align: center;
+    transform: rotate(calc(30deg* var(--k)));
+    inset: 2%;
+}
+ul li span{
+    transform: rotate(calc(-30deg* var(--k)));
+    display: inline-block;
+}
